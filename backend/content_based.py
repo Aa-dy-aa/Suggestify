@@ -6,7 +6,7 @@ from llm import RecommendationExplainer
 
 
 class ContentBasedFiltering:
-    def __init__(self, data_path=r'D:\LLM-based-Recommendation\dataset\amazon_products.csv'):
+    def __init__(self, data_path=r'C:\Users\sundr\Desktop\Suggestify\dataset\amazon_products.csv'):
         """
         Initialize the content-based filtering recommender
         
@@ -164,7 +164,7 @@ class ContentBasedFiltering:
             return recommendations
             
         except IndexError:
-            print(f"Product with ID {product_id} not found in the dataset.")
+            print(f"Product with ID {asin} not found in the dataset.")
             return None
     
     def get_recommendations_by_title(self, title, top_n=5):
