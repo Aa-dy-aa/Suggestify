@@ -1,12 +1,17 @@
-import Image from "next/image";
+"use client";
 import Navbar from "./components/Navbar";
-import SearchForm from "./components/queryInput";
+import Menu from "./components/Menu";
+import Card from "./components/Card";
+import { useState } from "react";
+
 export default function Home() {
+  const [results, setResults] = useState([]);
+
   return (
     <div>
-       <Navbar />
-      Recommend Me Claude
-      <SearchForm />
+      <Navbar />
+      <Menu setResults={setResults} /> {/* Pass setter to Menu */}
+      <Card results={results} /> {/* Pass results to Card */}
     </div>
   );
 }
