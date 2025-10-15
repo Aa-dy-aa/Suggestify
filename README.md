@@ -9,8 +9,7 @@
 - **Frontend:** Next.js, React, Tailwind CSS  
 - **Backend:** Python, FastAPI (or Flask)  
 - **AI/ML:** Large Language Models (LLM) for personalized suggestions  
-- **Database:** SQLite / PostgreSQL (adjust if used)  
-- **Deployment:** Vercel (frontend), Heroku/AWS (backend)
+- **Database:** MongoDB  
 
 ---
 
